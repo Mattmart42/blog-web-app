@@ -36,8 +36,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        Blog
-        {user && <button onClick={() => setWriting(true)}>New Article</button>}
+        <h1>Frog Blog</h1>
         {!user ? <SignIn /> : <SignOut />}
       </header>
 
@@ -50,6 +49,9 @@ export default function App() {
       ) : (
         <Article article={article} />
       )}
+      <footer>
+        {user && <button onClick={() => setWriting(true)}>+</button>}
+      </footer>
     </div>
   )
 }
