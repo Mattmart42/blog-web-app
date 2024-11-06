@@ -10,6 +10,10 @@ body {
   height: 100vh;
   overflow: scroll;
   background-color: rgb(210, 197, 123);
+  background-image: url("frog.png");
+  background-size: 100% 100% ;
+  color: black;
+  font-weight:bold;
 }
 
 header {
@@ -74,6 +78,7 @@ article {
 nav {
   background-color: rgb(202, 139, 30);
   color: white;
+  width: 60%;
 }
 
 nav p:hover {
@@ -94,6 +99,7 @@ article .date {
 
 article .body {
   white-space: break-spaces;
+  text-shadow: -1px 1px 0px white;
 }
 
 p {
